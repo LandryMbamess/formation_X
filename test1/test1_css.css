@@ -18,7 +18,7 @@ body{
 .menu ul {
 	list-style: none;
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: center;
 }
@@ -55,7 +55,6 @@ body{
 
 .title{
 	align-self: center;
-	position: relative;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
@@ -232,6 +231,67 @@ input[type="submit"]{
 	font-size: 15px;
 	font-weight: normal;
 }
+
+@media screen and (max-width: 1000px), screen and (max-width: 600px){
+
+	.first{
+		background-size: auto;
+		height: auto;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	.accueil{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: baseline;
+	}
+
+	.menu ul {
+		list-style: none;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.title{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+	}
+
+	
+	.title h1, .title h3{
+		width: 100%;
+		text-align: center;
+		padding-top: 3em;
+		padding-bottom: 0;
+		margin: 0;
+	}
+	
+	#res_contact{
+		height: 100%;
+		width: 100%;
+		padding: 25px 0;
+		margin: 0;
+
+	}
+	.contener{
+		width: 100%;
+		height: 100%;
+
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		align-items: flex-start;	
+
+	}
+}
+
 @font-face{
 	font-family: 'HerrVonMuellerhoff-Regular';
 	src: url('police/HerrVonMuellerhoff-Regular.ttf');
