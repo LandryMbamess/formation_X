@@ -1,9 +1,7 @@
 
 body{
-	font-family: 'Source Sans Pro';
-	color: #fbfbf8;
-	padding: 0;
-	margin: 0;
+	font-family: 'source-sans-pro';
+	color: #ffffff;
 }
 
 .first{
@@ -11,46 +9,48 @@ body{
 	background-size: auto;
 	height: 910.7px;
 	width: auto;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-start;
-}
-.menu ul {
-	list-style: none;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: center;
 }
 
-.menu ul li, .logo {
-	margin-right: auto;
-}
-.accueil{
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	
+
+
+.icon-bar {
+	width: 34px;
+	height: 4px;
+	background-color: #ffffff;
+	display: block;
+	transition: all 0.2s;
+	margin: 4px 0;
 }
 
-.menu a {
-	text-decoration: none;
-	font-family: 'Source Sans Pro';
-	font-weight: normal;
-	font-size: 13px;
-	color: #ffffff;
+.navbar{
+	margin-left: 30px;
+
+}
+.collapse{
+	display: flex;
+	justify-content: center;
+}
+.navbar-nav{
+
+}
+
+[class*="nav-item"]{
+	white-space: nowrap;
+	background: url('flechep.png') no-repeat center left;
+	background-size: auto;
+	padding-left: 5px;
+}
+
+[class*="nav-link"]{
+	font-size: 14px;
 	text-transform: uppercase;
-
+	color: #ffffff;
+	transition: all 0.5s;
 }
 
-.menu a:hover,.menu a:focus{
-	color: #2ec8e4;
+.nav-link:hover,.nav-link:focus,.nav-link:active{
+	color: #00bcd4;
 }
-
-/* .menu a:focus{
-	color: #2ec8e4;
-} */
 
 
 .title{
@@ -64,7 +64,7 @@ body{
 .title h1{
 	font-family: 'Montserrat';
 	font-weight: bold;
-	font-size: 78px;
+	font-size: 80px;
 	letter-spacing: 0.05em;
 	text-align: center;
 	padding-top: 3em;
@@ -78,6 +78,8 @@ body{
 	font-weight: normal;
 	letter-spacing: 0.05em;
 	margin-top: 0;
+	font-size: 19px;
+	opacity: 0.7;
 	
 }
 
@@ -93,6 +95,7 @@ body{
 }
 .link a {
 	text-decoration: none;
+	font-family: 'Montserrat';
 	color: #fbfbf8;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -114,6 +117,8 @@ body{
 	justify-content: flex-start;
 	align-items: center;
 	color: black;
+	position: static;
+
 }
 
 #info h1 {
@@ -149,27 +154,28 @@ body{
 	background: url('jardin-des-envies3.jpeg') fixed no-repeat center center;
 	background-size: cover;
 	height: 800px;
-	padding: 7em 3em 0 3em;
+	padding: 8em 3em 50em 3em;
 }
 
 .img{
 	flex: 1;
-	align-self: center;
+	align-self: flex-start;
+	margin-top: 80px;
 }
 .img img{
 	width: 404px;
 	height: 409px;
 }
 .contener{
-	height: 678.8px;
-	width: 1212px;
+/* 	height: 678.8px;
+ */	width: 1212px;
 	background-color: white;
 	color: black;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
-	align-items: flex-start;	
-	margin: auto;
+	align-items: flex-start;
+	padding: 40px 20px;
 }
 .nom{
 	display: flex;
@@ -197,6 +203,14 @@ input[type="submit"]{
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: center;
+}
+.form_res h1, .contact h1{
+	font-weight: 700;
+	color: #262626;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-family: 'Montserrat';	
 }
 
 .contact p{
@@ -232,28 +246,14 @@ input[type="submit"]{
 	font-weight: normal;
 }
 
-@media screen and (max-width: 1000px), screen and (max-width: 600px){
+@media screen and (max-width: 1200px), screen and (max-width: 600px){
 
+	/
 	.first{
 		background-size: auto;
 		height: auto;
 		display: flex;
 		flex-flow: column nowrap;
-	}
-
-	.accueil{
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: flex-start;
-		align-items: baseline;
-	}
-
-	.menu ul {
-		list-style: none;
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: flex-start;
-		align-items: center;
 	}
 
 	.title{
@@ -287,7 +287,7 @@ input[type="submit"]{
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: flex-start;
-		align-items: flex-start;	
+		align-items: center;	
 
 	}
 }
@@ -310,6 +310,12 @@ input[type="submit"]{
 		url('police/Montserrat-Bold.ttf');
 
 }
+
+@font-face{
+	font-family: 'source-sans-pro';
+	src: url('police/source-sans-pro.regular.ttf');
+}
+
 @font-face{
 	font-family: 'GeosansLight';
 	src: url('police/GeosansLight.ttf'),url('police/GeosansLight-Oblique.ttf');
