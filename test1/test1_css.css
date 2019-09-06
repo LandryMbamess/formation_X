@@ -249,6 +249,29 @@ input[type="submit"]{
 	font-weight: normal;
 }
 
+.scroll-top {
+  	width: 50px;
+  	height: 50px;
+  	position: fixed;
+  	bottom: 65px;
+  	right: 30px;
+  	display: none;
+  	background-color: black;
+
+	opacity: 0.5;
+}
+
+.top{
+  	background: url('top.png') no-repeat center center;
+
+}
+
+.scroll-top i {
+  	display: inline-block;
+
+}
+
+
 @media screen and (max-width: 1200px), screen and (max-width: 600px){
 
 	/
