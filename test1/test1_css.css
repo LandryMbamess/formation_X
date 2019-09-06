@@ -2,13 +2,14 @@
 body{
 	font-family: 'source-sans-pro';
 	color: #ffffff;
+	padding: 0;
+	margin: 0;
 }
 
 .first{
 	background: url('jardin-des-envies6.png') no-repeat;
-	background-size: auto;
+	background-size: cover;
 	height: 910.7px;
-	width: auto;
 }
 
 
@@ -23,18 +24,25 @@ body{
 }
 
 .navbar{
-	margin-left: 30px;
-
+	display: flex;
 }
-.collapse{
+/* .collapse{
 	display: flex;
 	justify-content: center;
 }
 .navbar-nav{
 
+} */
+hearder{
+	margin: auto;
 }
+.navbar-nav{
+	flex: auto;
+	margin: auto;
+ }
 
 [class*="nav-item"]{
+	flex: auto;
 	white-space: nowrap;
 	background: url('flechep.png') no-repeat center left;
 	background-size: auto;
@@ -110,7 +118,6 @@ body{
 #info{
 	background: url('3-layers-1.png') fixed no-repeat center center;
 	background-size: auto;
-	width: 100%;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
@@ -163,7 +170,6 @@ body{
 
 .img{
 	flex: 1;
-	align-self: flex-start;
 	margin-top: 80px;
 }
 .img img{
@@ -171,7 +177,6 @@ body{
 	height: 409px;
 }
 .contener{
-	width: 1212px;
 	background-color: white;
 	color: black;
 	display: flex;
@@ -191,10 +196,8 @@ body{
 	flex-flow: row wrap;
 
 }
-input{
-	width: 100%;
-	margin: auto;
-}
+
+
 input[type="submit"]{
 	width: auto;
 	margin: auto;
@@ -205,17 +208,28 @@ input[type="submit"]{
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
-	align-items: center;
 }
+
 .form_res h1, .contact h1{
 	font-weight: 700;
 	color: #262626;
 	font-size: 24px;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	font-family: 'Montserrat';	
+	font-family: 'Montserrat';
+	margin-bottom: 25px;	
 }
 
+.contact h1{
+	text-align: center;
+}
+
+label{
+	font-weight: bold;
+}
+.form-control{
+	margin-top: 0;
+}
 .contact p{
 	display: flex;
 	flex-flow: column wrap;
@@ -223,7 +237,6 @@ input[type="submit"]{
 	align-items: center;
 	text-align: center;
 	color: #505050;
-	margin: 1em;
 	font-size: 15px
 }
 .form_res p{
@@ -231,6 +244,11 @@ input[type="submit"]{
 	color: #5f727f;
 
 }
+
+.form-control{
+/* 	margin: -10px;
+ */}
+
 .form_res {
 	margin-right: 25px;  
 
@@ -311,8 +329,8 @@ input[type="submit"]{
 		height: 100%;
 
 		display: flex;
-		flex-flow: column wrap;
-		justify-content: flex-start;
+		flex-flow: column nowrap;
+		justify-content: center;
 		align-items: center;	
 
 	}
