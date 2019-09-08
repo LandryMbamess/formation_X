@@ -374,10 +374,9 @@ input[type="submit"]:hover{
 	.title h1{
 		font-family: 'Montserrat';
 		font-weight: bold;
-		font-size: 70px;
 		letter-spacing: 0.01em;
 		text-align: center;
-		padding-top: 4em;
+		padding-top: 2em;
 		padding-bottom: 15px;
 		margin: auto;
 	}
@@ -395,12 +394,18 @@ input[type="submit"]:hover{
 		padding-bottom: 15px;
 		text-align: center;
 	}
-
+	
+	.title{
+		margin: 0;
+		padding: 0;
+	}
 	.title h1{
 		font-size: 50px;
 		letter-spacing: 0.01em;
 		padding-top: 1em;
 		padding-bottom: 15px;
+		margin: auto;
+		text-align: center;
 	}
 
 	.first{
