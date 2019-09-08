@@ -23,20 +23,16 @@ body{
 	margin: 4px 0;
 }
 
-header{
-	margin-right: 5%;
-	margin-left: 5%;
+.first .container{
+	margin: auto;
 }
+
 .navbar{
-	/* margin: auto; */
 	display: flex;
-	align-items: center;
 }
 .navbar-nav{
-	flex: 2;
-	align-self: center;
+	flex: 4;
 	display: flex;
-	/* flex-flow: row nowrap; */
  }
 
 [class*="nav-item"]{
@@ -115,14 +111,15 @@ header{
 
 #info{
 	background: url('3-layers-1.png') fixed no-repeat center center;
-	background-size: auto;
+	background-size: cover;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
 	align-items: center;
 	color: black;
-	position: static;
-
+	/* position: relative;
+	height: 100%;
+	width: 100%; */
 }
 
 #info h1 {
@@ -162,13 +159,13 @@ header{
 #res_contact{
 	background: url('jardin-des-envies3.jpeg') fixed no-repeat center center;
 	background-size: cover;
-	height: 800px;
 	padding: 8em 5%;
 }
 
 .img{
 	flex: auto;
-	margin-top: 80px;
+	align-self: center;
+	margin: auto;
 }
 .img img{
 	width: 404px;
@@ -181,8 +178,10 @@ header{
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding: 40px 30px;
-}
+ }
+ .container{
+
+ }
 .nom{
 	display: flex;
 }
@@ -208,6 +207,10 @@ header{
 
 .contact{
 	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 .form_res h1, .contact h1{
@@ -248,7 +251,8 @@ label{
  */}
 
 .form_res {
-	margin-right: 25px;  
+	margin: auto;
+	padding: 30px;  
 
 }
 .footer{
@@ -264,7 +268,21 @@ label{
 	font-size: 15px;
 	font-weight: normal;
 }
-
+input[type="submit"]{
+	font-family: "Montserrat";
+	border: none;
+	background-color: #b6c6c9;
+	color: #ffffff;
+	font-weight: 700;
+	height: 40px;
+	padding: 0 17px;
+	font-size: 14px;
+	margin: 25px;
+	border-radius: 3px;
+}
+input[type="submit"]:hover{
+	background-color: #686561;
+}
 .scroll-top {
   	width: 50px;
   	height: 50px;
@@ -286,11 +304,39 @@ label{
   	display: inline-block;
 
 }
+.form-control{
+	border: 1px solid #dfe5e8;
+	border-radius: 0;
+	background-color: #f4f6f7;
+	height: 30px;
+}
+/* @media screen and (max-width: 1100px){
+	.container{
+			max-width: none;
+			padding: 0;
+			padding-right: 15px;
+	  		padding-left: 15px;
+
+		}
+
+}
+
+ */
+ @media screen and (max-width: 1200px){
 
 
-@media screen and (max-width: 1100px), screen and (max-width: 600px){
+	#res_contact .container, .first .container{
+		max-width: none;
+		padding: 0;
+		margin: auto;
+	}
+	#res_contact{
+		padding: 8em 0;
+	}
 
-	/
+ }
+@media screen and (max-width: 1100px) /* screen and (max-width: 600px) */{
+
 	.first{
 		background-size: auto;
 		height: auto;
@@ -308,29 +354,46 @@ label{
 
 	
 	.title h1, .title h3{
-		width: 100%;
 		text-align: center;
 		padding-top: 3em;
 		padding-bottom: 0;
-		margin: 0;
+		margin: auto;
 	}
 	
 	#res_contact{
-		height: 100%;
-		padding: 25px 0;
+		padding: 6em 0;
 		margin: 0;
 
 	}
-	.contener{
-		width: 100%;
-		display: flex;
-		flex-flow: column nowrap;
-		align-items: center;	
+
+	#res_contact .container{
+		max-width: none;
+		padding: 0;
+		
 
 	}
-	.img, .form_res{
-		flex: auto;
+	.contener{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		margin: auto
 
+	}
+
+	.img{
+		padding-top: 25px;
+		margin: auto;
+	}
+
+	.form_res{
+		margin: 0;
+
+
+	}
+	.img img{
+		width: 100%;
+		height: 100%;
 	}
 	.contact{
 		margin-top: 40px;

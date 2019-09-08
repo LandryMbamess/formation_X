@@ -8,7 +8,7 @@
 </head>
 <body>
 		<div class="container-fluid first">
-			<header>
+			<header class="container">
 				<nav class="navbar navbar-expand-lg">
 					<a href="#" class="navbar-brand"><img src="logo.png" alt="jardindesenvies"></a>
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#responsive">
@@ -30,7 +30,7 @@
 				</nav>
 			</header>
 
-			<div class="title">
+			<div class="title container">
 				<h1>JARDIN DES ENVIES</h1>
 				<span></span>
 				<h3>SIMPLEMENT BON!</h3>
@@ -48,23 +48,23 @@
 			<a href="#">notre hitoire</a></p>
 		</div>
 		<div id="res_contact">
-			<div class="contener">
+			<div class="contener container">
 				<div class="form_res">
 					<h1>réserver une <br> table</h1>
 					<form action="#" method="post">			
-							<div class="nom mb-3">
-								<p class="mr-3"><label for="famille">Nom de famille</label><input class="form-control" type="text" name="famille" id="famille" required></p>
-								<p><label for="prenom">Prénom</label><input type="text" class="form-control" name="prenom" id="prenom" required></p>
+							<div class="row nom mb-3">
+								<p class="col-lg-6"><label for="famille">Nom de famille</label><input class="form-control" type="text" name="famille" id="famille" required></p>
+								<p class="col-lg-6"><label for="prenom">Prénom</label><input type="text" class="form-control" name="prenom" id="prenom" required></p>
 							</div>
-							<p><label for="date_ch">Choisir une date</label></p>
-							<p><input type="date" name="date" id="date_ch" required class="form-control"></p>
-							<p><label for="date_av">Heure d'arrivée</label></p>
-							<p><input type="date" name="date" id="date_av" class="form-control" required></p>
-							<p><label for="phone">Numéro de mobile</label></p>
-							<p><input type="tel" class="form-control" name="tel" id="phone" required></p>
-							<p><label for="nombre">Nombre de personnes</label></p>
-							<p><input class="form-control" type="number" name="date" id="nombre"></p>
-							<p><input type="submit" value="SOUMETTRE" class="bnt bnt-primary mt-5"></p>
+							<p class="row mb-3"><label for="date_ch">Choisir une date</label>
+							<input type="date" name="date" id="date_ch" required class="form-control col-lg-12"></p>
+							<p class="row mb-3"><label for="date_av">Heure d'arrivée</label>
+							<input type="date" name="date" id="date_av" class="form-control col-lg-12" required></p>
+							<p class="row mb-3"><label for="phone">Numéro de mobile</label>
+							<input type="tel" class="form-control col-lg-12" name="tel" id="phone" required></p>
+							<p class="row mb-3"><label for="nombre">Nombre de personnes</label>
+							<input class="form-control col-lg-" type="number" name="date" id="nombre"></p>
+							<p><input type="submit" value="SOUMETTRE" class="bnt bnt-primary"></p>
 					</form>
 				</div>
 				<div class="img">
@@ -79,7 +79,7 @@
 					<p>les privatisations pour mariage anniversaire batême séminaire tous les jours à partie de 17h</p>
 				</div>
 			</div>
-			<button class="btn btn-primary scroll-top" data-scroll="up" type="button">
+			<button class="btn btn-default scroll-top" data-scroll="up" type="button">
 				<div class="top">
 					<i class="fa fa-chevron-up"></i>
 					
