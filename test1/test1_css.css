@@ -117,6 +117,7 @@ body{
 	justify-content: flex-start;
 	align-items: center;
 	color: black;
+	padding-top: 5em;
 	/* position: relative;
 	height: 100%;
 	width: 100%; */
@@ -178,6 +179,7 @@ body{
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
+	padding-top: 20px;
  }
  .container{
 
@@ -209,8 +211,8 @@ body{
 	margin-top: 30px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 .form_res h1, .contact h1{
@@ -221,6 +223,7 @@ body{
 	letter-spacing: 0.05em;
 	font-family: 'Montserrat';
 	margin-bottom: 25px;	
+	line-height: 38px;
 }
 
 .contact h1{
@@ -229,6 +232,7 @@ body{
 
 label{
 	font-weight: bold;
+	margin-top: 8px;
 }
 
 .contact p{
@@ -238,7 +242,8 @@ label{
 	align-items: center;
 	text-align: center;
 	color: #505050;
-	font-size: 15px
+	font-size: 15px;
+	padding-top: 15px;
 }
 .form_res p{
 	margin: auto;
@@ -266,18 +271,18 @@ label{
 }
 input[type="submit"]{
 	font-family: "Montserrat";
-	border: none;
-	background-color: #b6c6c9;
-	color: #ffffff;
-	font-weight: 700;
+	border:1px solid #ccc;
+	background-color: #fff;
+	color: #333;
+	font-weight: 400;
 	height: 40px;
-	padding: 0 17px;
+	padding: 6px 12px;
 	font-size: 14px;
-	margin: 25px;
-	border-radius: 3px;
+	margin: 30px 0;
+	border-radius: 2px;
 }
 input[type="submit"]:hover{
-	background-color: #686561;
+	background-color: #ccc;
 }
 .scroll-top {
   	width: 50px;
@@ -287,7 +292,8 @@ input[type="submit"]:hover{
   	right: 30px;
   	display: none;
   	background-color: black;
-
+  	border: none;
+	border-radius: 0;
 	opacity: 0.5;
 }
 
@@ -301,10 +307,9 @@ input[type="submit"]:hover{
 
 }
 .form-control{
-	border: 1px solid #dfe5e8;
-	border-radius: 0;
-	background-color: #f4f6f7;
-	height: 30px;
+/* 	border: 1px solid;
+ */	/* border-radius: 0;
+	height: 30px; */
 }
 /* @media screen and (max-width: 1100px){
 	.container{
@@ -376,20 +381,26 @@ input[type="submit"]:hover{
 		padding-bottom: 15px;
 		margin: auto;
 	}
-	
+
+	.link{
+	border: 2px solid #ffa742;
+	border-radius: 3px;
+	margin-top: 60px;
+	height: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+
+}
 	 	
  }
  
  @media screen and (max-width: 700px){
- 	#info h1 {
-		color: #ffa742;
-		background: url('stars.jpg') no-repeat bottom center;
-		font-family: 'HerrVonMuellerhoff-Regular';
-		font-weight: 400;
+ 	/* #info h1 {
 		font-size: 50px;
 		padding-bottom: 15px;
 		text-align: center;
-	}
+	} */
 	
 	.title{
 		margin: 0;
@@ -436,16 +447,16 @@ input[type="submit"]:hover{
 		flex-flow: column nowrap;
 		justify-content: flex-start;
 	}
-/* 
+
 	.title h1{
 	
-		font-size: 80px;
+		font-size: 60px;
 		letter-spacing: 0.05em;
 		text-align: center;
 		padding-top: 3em;
 		padding-bottom: 15px;
 		margin: auto;
-	} */
+	}
 	/* .title h1, .title h3{
 		text-align: center;
 		padding-top: 3em;
